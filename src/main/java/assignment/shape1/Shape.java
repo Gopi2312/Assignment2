@@ -10,7 +10,6 @@ class Shape
     float side2;
     float radius;
     int x;
-    boolean b = true;
     Scanner sc = new Scanner(System.in);
     Logger logger = Logger.getLogger("hi");
 
@@ -41,7 +40,6 @@ class Shape
             float triangle = base + side1 + side2;
             logger.log(Level.INFO,()->"Perimeter of triangle:" + triangle);
         } else {
-            b = false;
             System.exit(0);
         }
     }
@@ -57,7 +55,6 @@ class Shape
             float triangle = (float) (1.0 / 2.0 * (base * side1));
             logger.log(Level.INFO,()->"Area of triangle:" + triangle);
         } else {
-            b = false;
             System.exit(0);
         }
     }
