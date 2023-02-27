@@ -31,7 +31,7 @@ class Shape
 
     void perimeter() {
         if (x == 1) {
-            float circle = (float) (2 * 3.14 * radius);
+            float circle = 2 * 3.14 * radius;
             logger.log(Level.INFO,()->"Perimeter of circle:" + circle);
         } else if (x == 2) {
             float rectangle = 2 * (height + width);
@@ -46,13 +46,13 @@ class Shape
 
     void area() {
         if (x == 1) {
-            float circle = (float) (3.14 * radius * radius);
+            float circle = 3.14 * radius * radius;
             logger.log(Level.INFO,()->"Area of circle:" + circle);
         } else if (x == 2) {
             float rectangle = height * width;
             logger.log(Level.INFO,()->"Area of rectangle:" + rectangle);
         } else if (x == 3) {
-            float triangle = (float) (1.0 / 2.0 * (base * side1));
+            float triangle = 1.0 / 2.0 * (base * side1);
             logger.log(Level.INFO,()->"Area of triangle:" + triangle);
         } else {
             System.exit(0);
